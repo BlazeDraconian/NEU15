@@ -72,7 +72,7 @@ catch
 }
 Console.WriteLine("The end ");
 */
-
+/*
 static int OneDividedbyX(int x) // Funktion för att medvetet skriva ut en exception 
 { 
     if (x < 1 || x > 100)
@@ -82,7 +82,7 @@ static int OneDividedbyX(int x) // Funktion för att medvetet skriva ut en excep
     return 1 / x; 
 }
 
-
+*/ 
 
 
 

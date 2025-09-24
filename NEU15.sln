@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb 1 Algoritmer ( Daniel 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception_handling", "Exception_handling\Exception_handling.csproj", "{57EF431E-D14C-4FBE-96AD-0E59156265FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klasser och objekt", "Klasser och objekt\Klasser och objekt.csproj", "{58F2B4DA-E47C-4666-9BC8-AF48BAE1091A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{57EF431E-D14C-4FBE-96AD-0E59156265FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57EF431E-D14C-4FBE-96AD-0E59156265FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57EF431E-D14C-4FBE-96AD-0E59156265FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F2B4DA-E47C-4666-9BC8-AF48BAE1091A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F2B4DA-E47C-4666-9BC8-AF48BAE1091A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F2B4DA-E47C-4666-9BC8-AF48BAE1091A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F2B4DA-E47C-4666-9BC8-AF48BAE1091A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
