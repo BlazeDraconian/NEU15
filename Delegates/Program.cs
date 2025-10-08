@@ -41,6 +41,7 @@ static int CountWords(string text)
 
 MyOtherDelegate functionDelegate = FunctionA;
 functionDelegate += FunctionB;
+functionDelegate += FunctionC;
 functionDelegate.Invoke("Hello");
 
 static void FunctionA(string text)
