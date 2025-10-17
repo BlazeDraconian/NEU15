@@ -111,7 +111,7 @@ var people = new[]
 
 //## 2. Filtrera på ålder
 //Filtrera arrayen(uppgift 1) så du får en ny lista med endast de användare som är mellan 20 och 40 år gamla. 
-var PeopleAge = people.Where(person => person.Age >= 20 && person.Age <= 40).ToArray();
+var PeopleAge = people.Where(person => person.Age >= 20 && person.Age <= 40).ToList();
 
 
 //## 3. Är någon längre än 190 cm?
@@ -149,27 +149,57 @@ foreach (var p in FilteredBMI)
     Console.WriteLine($"Name = : {p.name}. BMI = {p.bmi:f1}");
 }
 
-
+Console.WriteLine();
 
 //## 7. Filtrera orginallistan på BMI
 //Filtrera arrayen (från uppgift 1) så att du endast får med personer med BMI under 20 eller BMI över 25.
+var filteredBMI = people
+    .Where(person =>
+    {
+        var bmi = person.Weight / Math.Pow(person.Height / 100.0, 2);
+        return bmi < 20 || bmi > 25;
+    })
+    .ToArray();
+foreach (var p in filteredBMI)
+{
+    var bmi = p.Weight / Math.Pow(p.Height / 100.0, 2);
+    Console.WriteLine($"Name = : {p.FirstName} {p.LastName}. BMI = : {bmi:f1} ");
+}
+Console.WriteLine();
 
 //## 8. Username tillsammans med Category 
 //Skapa en ny lista från arrayen (i uppgift 1) som innehåller objekt med properties Username (förnamnet + åldern, ex. “Kalle23”),
 //samt Category (som har värdet “Child” eller “Adult” beroende på om personen är under 18 eller inte).
+var agelist = people.Select(person => new { Username = $"{person.FirstName}{person.Age}", Category = person.Age < 18 ? "Child" : "Adult" }).ToList();
+foreach (var p in agelist)
+{
+    Console.WriteLine($"Username = {p.Username}. Age category : {p.Category}");
+}
+Console.WriteLine();
 
 //## 9. Query syntax
-//Lös alla uppgifter 2 - 8 med query-syntax (om du använt method-syntax, annars tvärtom).
+//Lös valfri uppgift query-syntax (om du använt method-syntax, annars tvärtom).
+var filterednames = from p in people where p.FirstName.Length > p.LastName.Length select new {p.FirstName, p.LastName};
 
+foreach (var p in filterednames)
+{
+    Console.WriteLine(p);
+}
+Console.WriteLine();
 //## 10. Sortera efter längd
 //LINQ använder metoderna .OrderBy() och .OrderByDescending() för att sortera data.
-
 //Skriv ut alla personer (från uppgift 1) i längdordning (kortast först).
+var HeightSorted = people.OrderBy(person => person.Height);
+foreach (var p in HeightSorted)
+{
+    Console.WriteLine(p);
+}
+Console.WriteLine();
 
 //## 11. Sortera äldst till yngst
 //Skriv ut alla personer (från uppgift 1) sortera efter ålder; från äldst till yngst.
-
-//## 12. Sortering i första och andra hand
-//Efter .OrderBy eller .OrderByDescending() kan man använda .ThenBy() och .ThenByDescending() för att sortera på något annat i andra hand (
-//om flera objekt har samma värden i första sorteringen). //Skriv ut alla personer (från uppgift 1) sorterade på efternamn i stigande ordning (A -> Z).
-//Om flera personer har samma efternamn, sortera dessa på förnamn i fallande ordning (Z -> A).
+var AgeSorted = people.OrderByDescending(person =>  person.Age);
+foreach (var p in AgeSorted)
+{
+    Console.WriteLine(p);
+}
