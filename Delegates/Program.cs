@@ -270,3 +270,6 @@ int[] EvenNumbers =TheNumbersMason(integerArray, n => n % 2 == 0);
 Console.WriteLine($"Even numbers :{string.Join(" ", EvenNumbers)} \n");
 Console.WriteLine();
 */
+
+int x = 5;
+Console.Write($"{x}= {(x != 5 ? "?" : "x")}");
