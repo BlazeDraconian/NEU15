@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Contro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data_Binding", "Data_Binding\Data_Binding.csproj", "{02570430-00BC-4FCC-98F5-55F2E096C1A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dialogs_and_windows", "Dialogs_and_windows\Dialogs_and_windows.csproj", "{97B4B4D1-410F-42F9-ACF4-B86768624012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON", "JSON\JSON.csproj", "{986B51DB-22CB-4882-B91A-355FE2D34C68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,14 @@ Global
 		{02570430-00BC-4FCC-98F5-55F2E096C1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02570430-00BC-4FCC-98F5-55F2E096C1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02570430-00BC-4FCC-98F5-55F2E096C1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B4B4D1-410F-42F9-ACF4-B86768624012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B4B4D1-410F-42F9-ACF4-B86768624012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B4B4D1-410F-42F9-ACF4-B86768624012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B4B4D1-410F-42F9-ACF4-B86768624012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{986B51DB-22CB-4882-B91A-355FE2D34C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986B51DB-22CB-4882-B91A-355FE2D34C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986B51DB-22CB-4882-B91A-355FE2D34C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986B51DB-22CB-4882-B91A-355FE2D34C68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

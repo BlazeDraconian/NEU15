@@ -8,7 +8,8 @@
         FontSize="30"
         d:Width="500" d:Height="500"
         Title="MainWindow" Height="450" Width="800">
-    <!--<Grid>
+</Window>
+<Grid>
         <Button 
             x:Name="LeftButton"
             Content="Left Button"
@@ -30,9 +31,9 @@
     </Grid>
     
 </Window>-->
-    
-    
-    
+
+
+
     <!--
         
         <Element attribute1= "Value 1" Attribute2 = "Value2">
@@ -50,3 +51,4 @@
     </StackPanel>
     </Button.Content>
         -->
+
